@@ -1,33 +1,94 @@
 /*Background*/
 body {
-	background-color: white;
-	color: black;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-} 
-  
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
+	background-color:rgba(213,210,199,1.00);
+	color:#45433A;
+/*	color:#313028;*/
 }
 
-#container
-{
+.fade-in {
+	animation: fadeIn ease 5s;
+	-webkit-animation: fadeIn ease 5s;
+	-moz-animation: fadeIn ease 5s;
+	-o-animation: fadeIn ease 5s;
+	-ms-animation: fadeIn ease 5s;
+/*
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards;	
+*/
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+#header {
+	width: fit-content;
+	font: italic bold 30px/50px Georgia, serif;
+	text-align: center;
+	border-style: solid;
+}
+
+#header a {
+	color:#313028;
+	margin: 1%;
+}
+
+/*
+#container {
     height:2000px;    
 }
+*/
 
-#container DIV
-{ 
-    margin:50px; 
-    padding:50px; 
+#container div { 
+    margin:1%; 
+    padding:5%; 
 }
 
-.hideme
-{
+.hideme {
     opacity:0;
 }
+
+#title {
+	font: normal bold 40px/30px Georgia, serif;
+}
+
+#title h1 {
+	text-align: center;
+}
+
+#contact p {
+	text-align: center;
+}
+
+#title div {
+	text-align: center;
+}
+
+#title div a {
+	color:#45433A;;
+}
+
+#title div a:hover {
+	color: #EAE4CB;
+}
+
