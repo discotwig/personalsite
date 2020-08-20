@@ -41,54 +41,43 @@ body {
 	100% {opacity:1;}
 }
 
-#header {
+#menu {
 	width: fit-content;
 	font: italic bold 30px/50px Georgia, serif;
 	text-align: center;
 	border-style: solid;
 }
 
-#header a {
+#menu a {
 	color:#313028;
-	margin: 1%;
+	padding: 1%;
 }
 
-/*
-#container {
-    height:2000px;    
-}
-*/
-
-#container div { 
-    margin:1%; 
-    padding:5%; 
+#menu a:hover {
+	color: #EAE4CB;
 }
 
 .hideme {
     opacity:0;
+	padding: 5%;
 }
 
-#title {
-	font: normal bold 40px/30px Georgia, serif;
-}
-
-#title h1 {
+#container {
+	margin:1%; 
+    padding:2%; 
+	font: normal normal 50px/50px Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	text-align: center;
 }
 
-#contact p {
-	text-align: center;
+#container h1{
+	padding-bottom: 5%;
 }
 
-#title div {
-	text-align: center;
-}
-
-#title div a {
+#container div a {
 	color:#45433A;;
 }
 
-#title div a:hover {
+#container div a:hover {
 	color: #EAE4CB;
 }
 
