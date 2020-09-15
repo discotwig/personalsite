@@ -1,8 +1,64 @@
 /*Background*/
 body {
-    background-color: rgba(237,42,27,1.00);
-    color: #45433A;/*	color:#313028;*/
+	background-color: #829FFF;
+    color: black;
 }
+
+#container {
+	display: block;
+	background-color: #FFF2AE;
+	border-style: solid;
+	border-color: black;
+	border-radius: 25px;
+	height: 100em;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#title {
+	text-align: left;
+}
+
+#links {
+	float: right;
+/*
+	border-style: solid;
+	border-color: black;
+*/
+	height: inherit;
+	width: inherit;
+	margin-right: 8%;
+	margin-top: 7%;
+}
+
+#links img {
+	display: block;
+	float: left;
+}
+
+/*
+#ba_link {
+	display: block;
+	float: up;
+}
+
+#sys_link {
+	display: block;
+	float: up;
+}
+
+#sale_link {
+	display: block;
+	float: left;
+}
+
+#stu_link {
+	display: block;
+}
+*/
 
 .fade-in {
 	animation: fadeIn ease 5s;
