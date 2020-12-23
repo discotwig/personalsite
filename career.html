@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ryan Bishop - Career</title>
-		<link rel="stylesheet" href="css/career.css">
-		<script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
-		<script type="text/javascript" src="js/career.js"></script>
-		<meta name="viewport" content="width=device-width" />	  
-	</head>
-	<body class="fade-in">
-		<div id="container">
-			<div id="menu">
-				<a href="home.html">home</a>
-				<a href="career.html">career</a>
-			</div>
-			<div id="title"> 
-				<h1>Ryan's Career</h1>
-			</div>
-			<div id="buttons">
-				<button id="ba_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 1.png" alt=""></a></button>
-				<div id="ba_modal" class="modal">
-				  <div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal..</p>
-				  </div>
+<head>
+<title>Ryan Bishop - Career</title>
+<link rel="stylesheet" href="css/career.css">
+<script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+<script type="text/javascript" src="js/career.js"></script>
+<meta name="viewport" content="width=device-width" />
+</head>
+<body class="fade-in">
+<div id="container">
+	<div id="menu"> <a href="home.html">home</a> <a href="career.html">career</a> </div>
+	<div id="title">
+		<h1>Ryan's Career</h1>
+	</div>
+	<div id="buttons">
+		<button id="ba_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 1.png" alt=""></button>
+		<div id="ba_modal" class="modal">
+			<div class="modal-content">
+				<header class="modal-teal"> <span class="close" onClick="closeModal('ba_modal')">&times;</span>
+					<h1>Business Analyst</h1>
+				</header>
+				<div>
+					<p>Designed automation systems at C.H. Robinson, the global leader in 3rd party logistics.</p>
+					<p>Developed software with Python, Visual Basic, and AutoHotkey.</p>
+					<p>Managed projects that attributed to $500,000 in savings.</p>
 				</div>
-				<button id="sale_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 3.png" alt=""></a></button>
-				<div id="sale_modal" class="modal">
-				  <div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal..</p>
-				  </div>				
-				</div>
-				<button id="sys_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 2.png" alt=""></a></button>
-				<div id="sys_modal" class="modal">
-				  <div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal..</p>
-				  </div>				
-				</div>
-				<button id="stu_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 4.png" alt=""></a></button>
-				<div id="stu_modal" class="modal">
-				  <div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal..</p>
-				  </div>				
-				</div>
+				<footer class="modal-teal">
+					<p>Modal Footer</p>
+				</footer>
 			</div>
 		</div>
-	</body>
+		<button id="sale_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 3.png" alt=""></button>
+		<div id="sale_modal" class="modal">
+			<div class="modal-content">
+				<header> <span class="close" onClick="closeModal('sale_modal')">&times;</span>
+					<h1>Salesman</h1>
+				</header>
+				<div>
+					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
+					<p>Developed selling strategies based on store analytics and market trends.</p>
+					<p>Managed daily operations.</p>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>Modal Footer</p>
+				</footer>
+			</div>
+		</div>
+		<button id="sys_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 2.png" alt=""></button>
+		<div id="sys_modal" class="modal">
+			<div class="modal-content">
+				<header> <span class="close" onClick="closeModal('sys_modal')">&times;</span>
+					<h1>Salesman</h1>
+				</header>
+				<div>
+					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
+					<p>Developed selling strategies based on store analytics and market trends.</p>
+					<p>Managed daily operations.</p>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>Modal Footer</p>
+				</footer>
+			</div>
+		</div>
+		<button id="stu_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 4.png" alt=""></button>
+		<div id="stu_modal" class="modal">
+			<div class="modal-content">
+				<header> <span class="close" onClick="closeModal('stu_modal')">&times;</span>
+					<h1>Salesman</h1>
+				</header>
+				<div>
+					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
+					<p>Developed selling strategies based on store analytics and market trends.</p>
+					<p>Managed daily operations.</p>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>Modal Footer</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 <!--
 		</div>
 		<div id="menu">

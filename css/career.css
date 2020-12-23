@@ -1,9 +1,8 @@
 /*Background*/
 body {
 	background-color: #829FFF;
-    color: black;
+	color: black;
 }
-
 #container {
 	display: inline-block;
 	background-color: #FFF2AE;
@@ -13,83 +12,88 @@ body {
 	width: 95%;
 	margin: 2%;
 }
-
 #title, #menu {
 	text-align: center;
 	margin: 1%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
 }
-
 #buttons {
-	float: up;
 	border-style: solid;
 	border-color: black;
 	height: inherit;
 	width: auto;
 }
-
 #buttons img {
 	display: inline-block;
 	float: left;
 	border-style: solid;
 	border-color: red;
+	width: 100%;
 }
-
 #ba_button {
-/*	display: inline-block;*/
-/*	float: left;*/
+	/*	display: inline-block;*/
+	/*	float: left;*/
 }
-
 #sys_button {
-/*	display: inline-block;*/
-/*	float: up;*/
+	/*	display: inline-block;*/
+	/*	float: up;*/
 }
-
 #sale_button {
-/*	display: inline-block;*/
-/*	float: left;*/
+	/*	display: inline-block;*/
+	/*	float: left;*/
 }
-
 #stu_button {
-/*	display: inline-block;*/
-/*	float: left;*/
+	/*	display: inline-block;*/
+	/*	float: left;*/
 }
-
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	/*  display: none;  Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
+#ba_modal, #sale_modal, #sys_modal, #stu_modal {
+	display: none;
+}
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+	background-color: azure;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 2.5%;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	border-radius: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+
+.modal-teal {
+	text-align: center;
+	background-color: #93E7E8;
+	border: 2px groove blue;
+	border-radius: 50px;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: #aaa;
+	float: right;
+	font-size: 45px;
+	font-weight: bold;
+	margin-right: 2%;
 }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 /*
 
