@@ -14,13 +14,37 @@
 				<a href="career.html">career</a>
 			</div>
 			<div id="title"> 
-				<h1>About Ryan Bishop</h1>
+				<h1>Ryan's Career</h1>
 			</div>
-			<div id="links">
-				<div id="ba_link"><a href=""><img src="img/60sbillboard/Asset 1.png" alt=""></a></div>
-				<div id="sys_link"><a href=""><img src="img/60sbillboard/Asset 2.png" alt=""></a></div>
-				<div id="sale_link"><a href=""><img src="img/60sbillboard/Asset 3.png" alt=""></a></div>
-				<div id="stu_link"><a href=""><img src="img/60sbillboard/Asset 4.png" alt=""></a></div>
+			<div id="buttons">
+				<button id="ba_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 1.png" alt=""></a></button>
+				<div id="ba_modal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal..</p>
+				  </div>
+				</div>
+				<button id="sale_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 3.png" alt=""></a></button>
+				<div id="sale_modal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal..</p>
+				  </div>				
+				</div>
+				<button id="sys_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 2.png" alt=""></a></button>
+				<div id="sys_modal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal..</p>
+				  </div>				
+				</div>
+				<button id="stu_button" onClick="openModal(this.id)"><a href=""><img src="img/60sbillboard/Asset 4.png" alt=""></a></button>
+				<div id="stu_modal" class="modal">
+				  <div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal..</p>
+				  </div>				
+				</div>
 			</div>
 		</div>
 	</body>
