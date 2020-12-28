@@ -13,23 +13,64 @@ body {
 	margin: 2%;
 }
 #title, #menu {
-	text-align: center;
 	margin: 1%;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 25px;
+	text-align: center;
+	color: navy;	
+}
+#title {
+	font: bold 30px/50px Georgia, serif;
+}
+#menu {
+	width: fit-content;
+	font: italic bold 30px/50px Georgia, serif;
+	border-style: solid;
+	border-radius: 15px;
+}
+#menu a {
+	color:#8637A8;
+	padding: 1.5%;
+}
+#menu a:hover {
+	color:cadetblue;
 }
 #buttons {
 	border-style: solid;
 	border-color: black;
 	height: inherit;
-	width: auto;
-}
-#buttons img {
-	display: inline-block;
-	float: left;
-	border-style: solid;
-	border-color: red;
 	width: 100%;
+}
+.left_button img {
+	float: left;
+	margin-left: 10px;
+}
+.right_button img {
+	float: right;
+	margin-right: 10px;
+}
+button {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+/*
+button:hover {
+	color: aliceblue;
+}
+*/
+.bouncy{
+	animation: bouncy 5s infinite linear;
+	position:relative;
+}
+@keyframes bouncy {
+ 40%{top:0em;}
+ 43%{top:-0.9em;}
+ 46%{top:0em;}
+ 48%{top:-0.4em;}
+ 50%{top:0em;}
+ 100%{top:0em;}
 }
 #ba_button {
 	/*	display: inline-block;*/
@@ -69,7 +110,7 @@ body {
 	margin: 15% auto; /* 15% from the top and centered */
 	padding: 2.5%;
 	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 40%; /* Could be more or less, depending on screen size */
 	border-radius: 25px;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
