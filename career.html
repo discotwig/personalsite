@@ -9,116 +9,105 @@
 </head>
 <body class="fade-in">
 <div id="container">
-	<div id="menu"> <a href="home.html">home</a> <a href="career.html">career</a> </div>
-	<div id="title">
-		<h1>Ryan's Career</h1>
-	</div>
-	<div id="buttons">
-		<button id="ba_button" class="left_button bouncy" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 1.png" alt=""></button>
-		<div id="ba_modal" class="modal">
-			<div class="modal-content">
-				<header class="modal-teal"><span class="close" onClick="closeModal('ba_modal')">&times;</span>
-					<h1>Business Analyst</h1>
-				</header>
-				<div>
-					<p>Designed automation systems at C.H. Robinson, the global leader in 3rd party logistics.</p>
-					<p>Developed software with Python, Visual Basic, and AutoHotkey.</p>
-					<p>Managed projects that attributed to $500,000 in savings.</p>
-				</div>
-				<footer class="modal-teal">
-					<p>&nbsp;</p>
-				</footer>
-			</div>
-		</div>
-		<button id="sale_button" class="right_button bouncy" style="animation-delay:0.07s" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 3.png" alt=""></button>
-		<div id="sale_modal" class="modal">
-			<div class="modal-content">
-				<header> <span class="close" onClick="closeModal('sale_modal')">&times;</span>
-					<h1>Salesman</h1>
-				</header>
-				<div>
-					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
-					<p>Developed selling strategies based on store analytics and market trends.</p>
-					<p>Managed daily operations.</p>
-				</div>
-				<footer class="w3-container w3-teal">
-					<p>Modal Footer</p>
-				</footer>
-			</div>
-		</div>
-		<button id="sys_button" class="left_button bouncy" style="animation-delay:0.14s" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 2.png" alt=""></button>
-		<div id="sys_modal" class="modal">
-			<div class="modal-content">
-				<header> <span class="close" onClick="closeModal('sys_modal')">&times;</span>
-					<h1>Salesman</h1>
-				</header>
-				<div>
-					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
-					<p>Developed selling strategies based on store analytics and market trends.</p>
-					<p>Managed daily operations.</p>
-				</div>
-				<footer class="w3-container w3-teal">
-					<p>Modal Footer</p>
-				</footer>
-			</div>
-		</div>
-		<button id="stu_button" class="right_button bouncy" style="animation-delay:0.21s" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 4.png" alt=""></button>
-		<div id="stu_modal" class="modal">
-			<div class="modal-content">
-				<header> <span class="close" onClick="closeModal('stu_modal')">&times;</span>
-					<h1>Salesman</h1>
-				</header>
-				<div>
-					<p>Sold shoes for 5 years at Johnston &amp; Murphy.</p>
-					<p>Developed selling strategies based on store analytics and market trends.</p>
-					<p>Managed daily operations.</p>
-				</div>
-				<footer class="w3-container w3-teal">
-					<p>Modal Footer</p>
-				</footer>
-			</div>
-		</div>
-	</div>
+	<form action="home.html">
+		<button class="top_button" type="submit">home</button>
+	</form>
+	<form action="aboutme.html">
+		<button class="top_button" type="submit">about&nbsp;me</button>
+	</form>
+	<form method="get" action="resume/Resume-Ryan-Bishop.pdf" target="_blank" rel="noopener noreferrer">
+		<button class="top_button" type="submit" >download&nbsp;r&eacute;sum&eacute;</button>
+	</form>
+	<p id="title">My Career</p>
+	<table>
+		<tr>
+			<td><button id="ba_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 1.png" alt=""></button>
+				<div id="ba_modal" class="modal">
+					<div class="modal-content">
+						<header><span class="close" onClick="closeModal('ba_modal')">&times;</span>
+							<h1>Business Analyst</h1>
+						</header>
+						<div>
+							<p><a href="https://www.chrobinson.com/en-us/about-us/chrobinson/" target="_blank" rel="noopener noreferrer"><b>C.H. Robinson</b></a>&emsp;&emsp;&emsp;July 2019 &#45; May 2020</p>
+							<ul>
+								<li>Developed automation software to optimize business processes using Python, VBA, and SQL.</li>
+								<li>Analyzed large datasets in MS SQL Server, PGAdmin, Excel, and Python Notebooks.</li>
+								<li>Managed projects that contributed to $500,000 in savings.</li>
+							</ul>
+						</div>
+					</div>
+				</div></td>
+			<td><button id="sale_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 3.png" alt=""></button>
+				<div id="sale_modal" class="modal">
+					<div class="modal-content">
+						<header> <span class="close" onClick="closeModal('sale_modal')">&times;</span>
+							<h1>Salesman</h1>
+						</header>
+						<div>
+							<p><a href="https://www.johnstonmurphy.com/home" target="_blank" rel="noopener noreferrer"><b>Johnston &amp; Murphy</b></a>&emsp;&emsp;&emsp;Novemeber 2014 &#45; July 2019</p>
+							<ul>
+								<li>Consulted with customers, determine requirements, customize to needs, complete sales.</li>
+								<li>Developed selling strategies based on store analytics, create reports, train team.</li>
+								<li>Managed/ran daily operations such as: delivering cash deposits, opening/closing protocol, reportingand filing performance paperwork, and confirming product shipments and deliveries.</li>
+							</ul>
+						</div>
+					</div>
+				</div></td>
+		</tr>
+		<tr>
+			<td><button id="sys_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 2.png" alt=""></button>
+				<div id="sys_modal" class="modal">
+					<div class="modal-content">
+						<header> <span class="close" onClick="closeModal('sys_modal')">&times;</span>
+							<h1>Systems Architect</h1>
+						</header>
+						<div>
+							<p><a href="https://www.sweetrollconsulting.com/" target="_blank" rel="noopener noreferrer"><b>SweetRoll LLC</b></a>&emsp;&emsp;&emsp;May 2020 &#45; Present</p>
+							<ul>
+								<li>Managing Partner responsible for web application development, business operations, and financial procedures.</li>
+								<li>Optimize product value creation, business model, and pricing framework.</li>
+								<li>Design, build, and maintain minimum viable product.</li>
+								<li>Develop product plan for scaling and product-market fit.</li>
+							</ul>
+						</div>
+						<hr>
+						<div>
+							<p><a href="https://ansi.org/about/introduction" target="_blank" rel="noopener noreferrer"><b>American National Standards Institute</b></a>&emsp;&emsp;&emsp;March 2019 &#45; June 2019</p>
+							<ul>
+								<li>Organized ISO standards meeting for international shipping consortium (BIMCO).</li>
+								<li>Designed digitized maintenance logging system for container ships.</li>
+								<li>Modeled processes for data interchange standardization.</li>
+								<li>Collaborated on standard draft with industry experts and ISO organizers.</li>
+								<li>Learn more <a href="https://coles.kennesaw.edu/news/stories/2019-06-18-iso-standards-meeting-mad-lab.php" target="_blank" rel="noopener noreferrer">Here</a>&#33;</li>
+							</ul>
+						</div>
+					</div>
+				</div></td>
+			<td><button id="stu_button" onClick="openModal(this.id)"><img src="img/60sbillboard/Asset 4.png" alt=""></button>
+				<div id="stu_modal" class="modal">
+					<div class="modal-content">
+						<header> <span class="close" onClick="closeModal('stu_modal')">&times;</span>
+							<h1>Student</h1>
+						</header>
+						<div>
+							<p><a href="https://ansi.org/about/introduction" target="_blank" rel="noopener noreferrer"><b>Kennesaw State University</b></a>&emsp;&emsp;&emsp;Graduated May 2020 <br>
+								<b>Bachelor of Business Administration</b> in <i>Information Systems</i> </p>
+							<p>The focus of my studies was how to leverage information and computer processes to attain sustainable competitive advantages.</p>
+							<p>Relevant Courses/Skills:</p>
+							<ul>
+								<li>Application Development (Python, Java, Android, Visual Basic, GitHub, MS Teams)</li>
+								<li>Database Management (SQL, MS Access)</li>
+								<li>Global IS Project Management (Work Breakdown Structures, PMBOK, MS Project)</li>
+								<li>Business Statistics (Solver, Regression, MS Excel)</li>
+								<li>System Analysis and Design (Software Requirements Specification)</li>
+								<li>System Modeling (UML Class, ER, Use Case diagrams, Visio)</li>
+								<li>Web Development (HTML, CSS, Adobe Dreamweaver, XML, JavaScript)</li>
+							</ul>
+						</div>
+					</div>
+				</div></td>
+		</tr>
+	</table>
 </div>
 </body>
-<!--
-		</div>
-		<div id="menu">
-			<a href="home.html">home</a>
-			<a href="career.html">career</a>
-		</div>
-		<div id="container">
-			<div id="overview">
-				<h1>Career</h1>
-				<p><a href="#ba">Business Analysis</a></p>
-				<p><a href="#ansi">American National Standards Institute</a></p>
-				<p><a href="#jm">Sales</a></p>
-			</div>
-			<div id="work">
-				<div id="ba">
-					<h3>Business Analysis</h3>
-					<ul>
-						<li>Designed automation systems at C.H. Robinson, the global leader in 3rd party logistics.</li>
-						<li>Developed software with Python, Visual Basic, and AutoHotkey.</li>
-						<li>Managed projects that attributed to $500,000 in savings.</li>
-					</ul>
-				</div>
-				<div id="ansi">
-					<h3>American National Standards Institute</h3>
-					<ul>
-						<li>Designed digitized maintenance logging system for container ships.</li>
-						<li>Modeled processes for data interchange standardization.</li>
-						<li>Collaborated on standard draft with industry experts and ISO organizers.</li>
-					</ul>
-				</div>
-				<div id="jm">
-					<h3>Sales</h3>
-					<ul>
-						<li>Sold shoes for 5 years at Johnston &amp; Murphy.</li>
-						<li>Developed selling strategies based on store analytics and market trends.</li>
-						<li>Managed daily operations.</li>
-					</ul>
-				</div>
-			</div>
-		</div>-->
 </html>

@@ -4,7 +4,6 @@ body {
 	color: black;
 }
 #container {
-	display: inline-block;
 	background-color: #FFF2AE;
 	border-style: solid;
 	border-color: black;
@@ -12,81 +11,97 @@ body {
 	width: 95%;
 	margin: 2%;
 }
-#title, #menu {
+#title, .top_button {
 	margin: 1%;
 	text-align: center;
-	color: navy;	
+	color: navy;
 }
-#title {
-	font: bold 30px/50px Georgia, serif;
-}
-#menu {
+.top_button {
 	width: fit-content;
 	font: italic bold 30px/50px Georgia, serif;
 	border-style: solid;
 	border-radius: 15px;
-}
-#menu a {
-	color:#8637A8;
-	padding: 1.5%;
-}
-#menu a:hover {
-	color:cadetblue;
-}
-#buttons {
-	border-style: solid;
-	border-color: black;
-	height: inherit;
-	width: 100%;
-}
-.left_button img {
+	display: inline-block;
 	float: left;
-	margin-left: 10px;
 }
-.right_button img {
-	float: right;
-	margin-right: 10px;
-}
-button {
-	background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-/*
-button:hover {
+.top_button:hover {
+	background-color: darkgreen;
 	color: aliceblue;
 }
-*/
-.bouncy{
+#title {
+	width: 100%;
+	display: block;
+	float: left;
+	font: bold 80px/2 Georgia, serif;
+}
+table {
+	margin-top: 4%;
+	width: 100%;
+}
+tr, td {
+	text-align: center;
+	width: 50%
+}
+header {
+	border-bottom: 5px solid grey;
+}
+ul {
+	list-style-type: none;
+	margin: 2%;
+}
+li {
+	text-align: left;
+	margin-bottom: 1%;
+}
+li:before {
+	content: '\1F4BE';
+	margin-left: -20px;
+	margin-right: 10px;
+}
+a {
+	text-decoration: none;
+	color: blueviolet;
+}
+a:hover {
+	color: hotpink;
+}
+button {
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	caret-color: transparent;
+}
+td:hover {
+	background-color: aliceblue;
+}
+.bouncy {
 	animation: bouncy 5s infinite linear;
-	position:relative;
+	position: relative;
 }
 @keyframes bouncy {
- 40%{top:0em;}
- 43%{top:-0.9em;}
- 46%{top:0em;}
- 48%{top:-0.4em;}
- 50%{top:0em;}
- 100%{top:0em;}
-}
-#ba_button {
-	/*	display: inline-block;*/
-	/*	float: left;*/
-}
-#sys_button {
-	/*	display: inline-block;*/
-	/*	float: up;*/
-}
-#sale_button {
-	/*	display: inline-block;*/
-	/*	float: left;*/
-}
-#stu_button {
-	/*	display: inline-block;*/
-	/*	float: left;*/
+	40% {
+		top: 0em;
+	}
+	43% {
+		top: -0.9em;
+	}
+	46% {
+		top: 0em;
+	}
+	48% {
+		top: -0.4em;
+	}
+	50% {
+		top: 0em;
+	}
+	100% {
+		top: 0em;
+	}
 }
 /* The Modal (background) */
 .modal {
@@ -107,22 +122,14 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
 	background-color: azure;
-	margin: 15% auto; /* 15% from the top and centered */
+	margin: 10% auto; /* 15% from the top and centered */
 	padding: 2.5%;
 	border: 1px solid #888;
 	width: 40%; /* Could be more or less, depending on screen size */
 	border-radius: 25px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
-
-
-.modal-teal {
-	text-align: center;
-	background-color: #93E7E8;
-	border: 2px groove blue;
-	border-radius: 50px;
-}
-
 /* The Close Button */
 .close {
 	color: #aaa;
@@ -136,38 +143,52 @@ button:hover {
 	text-decoration: none;
 	cursor: pointer;
 }
-/*
-
 .fade-in {
-	animation: fadeIn ease 5s;
-	-webkit-animation: fadeIn ease 5s;
-	-moz-animation: fadeIn ease 5s;
-	-o-animation: fadeIn ease 5s;
-	-ms-animation: fadeIn ease 5s;
-	animation-iteration-count: 1; 
-	animation-fill-mode: forwards;	
+	animation: fadeIn ease 3s;
+	-webkit-animation: fadeIn ease 3s;
+	-moz-animation: fadeIn ease 3s;
+	-o-animation: fadeIn ease 3s;
+	-ms-animation: fadeIn ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 @keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
 @-moz-keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
 @-webkit-keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
 @-o-keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
 @-ms-keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
-}*/
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
