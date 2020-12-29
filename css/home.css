@@ -18,6 +18,9 @@
   font-family: Clip;
   src: url("https://acupoftee.github.io/fonts/Clip.ttf");
 }
+html {
+	caret-color: transparent;
+}
 body {
   background-image: url("../img/brick.jpg");
   width: auto;

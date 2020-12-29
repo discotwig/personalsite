@@ -1,4 +1,7 @@
 /*Background*/
+html {
+	caret-color: transparent;
+}
 body {
 	background-color: #829FFF;
 	color: black;
@@ -74,10 +77,10 @@ button {
 	cursor: pointer;
 	overflow: hidden;
 	outline: none;
-	caret-color: transparent;
 }
-td:hover {
+td:hover{
 	background-color: aliceblue;
+	border-radius: 25px
 }
 .bouncy {
 	animation: bouncy 5s infinite linear;
